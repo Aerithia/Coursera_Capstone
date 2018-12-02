@@ -1,0 +1,20 @@
+﻿Business Problem
+The problem is that our biggest technology client, NewLeaf Technologies, is trying to figure out the best move for their business. They either want to create a base in Toronto or New York City, they want us to use the foursquare api to help them make a decision.
+Data
+We will be using data from Toronto and New York including neighborhoods, boroughs, and what businesses are nearby. We will then be comparing the concentrations of neighborhoods, we can help the client know where to put their base to reach the greatest amount of people. The data is getting pulled from Canada postal codes M Wikipedia, U.S.A Zip Code Database, and the Geospatial Coordinates for Canada. 
+Methodology
+
+
+The first thing that had to happen was I needed to pull data from the wikipedia table and get that data into a csv file. Then I had the python package pandas read the website csv file and Geospatial coordinates csv into two dataframes. Once the website data was in a dataframe, I combined the dataframes. 
+
+
+        When it came to New York, I first downloaded the U.S Zip Code Database as a csv file. Once that was done, I used the python package pandas to read the data into a dataframe. 
+
+
+        Once all of the data was in dataframes, I used foursquare to find technology companies in the area of Toronto and New York. Once that was done, I overlayed the dataframes with the data from foursquare into two maps that could be compared.
+Results
+The results came back with three competitors in Toronto and six competitors in New York.
+Discussion
+Based on the data, Toronto is the better choice because there is a large amount of people but at the same time, there are fewer competitors in comparison to New York.
+Conclusion
+So In conclusion, our client NewLeaf Technologies should build their new headquarters in Toronto because Toronto has more than enough people to fill the jobs at the headquarters and at the same time there are fewer competitors.
